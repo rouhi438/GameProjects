@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+main {
+  width: 1000px;
+  height: 600px;
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  border: 20px solid wheat;
+}
+.player--0 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.player--1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.btn {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.current {
+  width: 130px;
+  height: 80px;
+  background-color: greenyellow;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 220px;
+}
+.current-score {
+  margin-top: 8px;
+  font-size: 20px;
+}
+.name {
+  margin-top: 70px;
+  font-size: 35px;
+}
+h4 {
+  margin-top: 30px;
+}
+.score {
+  font-size: 45px;
+  color: red;
+}
+.new-game {
+  width: 160px;
+  height: 40px;
+  border-radius: 30px;
+  margin-top: 60px;
+}
+.image-holder {
+  width: 160px;
+  height: 70px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.next-player {
+  margin-top: 80px;
+  height: 30px;
+}
+.next {
+  font-size: 28px;
+  font-weight: bold;
+}
+.roll-btn {
+  width: 120px;
+  height: 40px;
+  border-radius: 30px;
+  margin-top: 70px;
+}
+.hold-btn {
+  width: 120px;
+  height: 40px;
+  margin-top: 30px;
+  border-radius: 30px;
+}
+.dice1,
+.dice2 {
+  width: 70px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.hidden {
+  display: none;
+}
+.active-player {
+  background-color: lightgreen;
+}
+.player-winner {
+  background-color: black;
+  color: green;
+  font-weight: bold;
+}
+@media (max-width: 400px) {
+  main {
+    height: 500px;
+  }
+  .new-game {
+    width: 110px;
+    margin-top: 20px;
+  }
+  .name {
+    margin-top: 60px;
+    font-size: 25px;
+  }
+  .roll-btn {
+    margin-top: 40px;
+    width: 100px;
+  }
+  .hold-btn {
+    margin-top: 10px;
+    width: 100px;
+  }
+  .current {
+    width: 110px;
+    height: 60px;
+    margin-top: 140px;
+  }
+  .currentLeft {
+    margin-right: 60px;
+  }
+  .currentRight {
+    margin-left: 60px;
+  }
+  .image-holder {
+    width: 130px;
+    height: 60px;
+    margin-top: 130px;
+  }
+  .dice1,
+  .dice2 {
+    width: 60px;
+  }
+  .next-player {
+    margin-top: 30px;
+  }
+  .next {
+    font-size: 24px;
+  }
+}
