@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "arial";
+  height: 100vh;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+.container {
+  width: 600px;
+  height: 500px;
+  background-color: lightgray;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  color: black;
+  border-radius: 5px;
+}
+header {
+  height: 200px;
+  position: relative;
+  border-bottom: 10px solid #fff;
+}
+.again {
+  all: unset;
+  background-color: #ffffff;
+  width: 100px;
+  height: 50px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+.select-number {
+  position: absolute;
+  right: 20px;
+  top: 40px;
+}
+.select-number b {
+  color: red;
+}
+.guess {
+  text-align: center;
+  animation: moveUpDown linear 4s infinite;
+}
+.number {
+  width: 150px;
+  height: 65px;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 30px;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 40px;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.top-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input-btn,
+.check-btn {
+  all: unset;
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 25px;
+  text-align: center;
+}
+.input-btn {
+  width: 115px;
+  height: 50px;
+  font-size: 40px;
+  margin: 15px;
+  margin-top: 40px;
+}
+.check-btn {
+  width: 90px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.down-side {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.box2 {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.box2 span {
+  color: red;
+}
+@media screen and (max-width: 440px) {
+  .select-number {
+    font-size: 14px;
+  }
+  .again {
+    width: 80px;
+    height: 40px;
+    font-size: 14px;
+    margin: 25px;
+  }
+}
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes moveUpDown {
+  0% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-15px);
+  }
+
+  100% {
+    transform: translatey(0);
+  }
+}
